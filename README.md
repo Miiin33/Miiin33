@@ -16,15 +16,16 @@
 
 <br/>
 
-- 🥣 Eating is for **living**, and living is for **eating**.
-- 💧 I drink a lot of water when I'm thirsty.
-- 😴 Sleeping is the only skill I mastered without studying.
-- 🌱 Trying to understand the world, but the world doesn't want to be understood.
-- 👵 Current goal: become the oldest person on Earth.
+ 🥣 Eating is for **living**, and living is for **eating**. <br/>
+ 💧 I drink a lot of water when I'm thirsty. <br/>
+ 😴 Sleeping is the only skill I mastered without studying. <br/>
+ 🌱 Trying to understand the world, but the world doesn't want to be understood. <br/>
+ 👵 Current goal: become the oldest person on Earth. <br/>
 
 <br/>
 
 > _"We should drink more water."_ — Miiin
+<!--
 
 ---
 
@@ -48,7 +49,7 @@
 
 ---
 
-<!--
+
 ### 📊 GitHub Stats
 
 <img src="https://github-readme-stats.vercel.app/api?username=Miiin33&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117" alt="GitHub Stats" />
@@ -65,8 +66,10 @@ BLOG-POST-LIST:START
 BLOG-POST-LIST:END
 
 ---
--->
+
 
 <img src="https://komarev.com/ghpvc/?username=Miiin33&style=for-the-badge&color=1a1a2e" alt="Profile Views" />
+
+-->
 
 </div>
