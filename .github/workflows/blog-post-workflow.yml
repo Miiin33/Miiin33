@@ -1,9 +1,10 @@
 name: Latest blog post workflow
 
 on:
-  schedule:
-    - cron: '0 */6 * * *' # 每6小时运行一次
-  workflow_dispatch: # 支持手动触发
+  # schedule:
+  #   - cron: '0 */6 * * *'
+  # ↑ 暂时关闭定时触发，等配置好真实 RSS 地址后取消注释即可自动运行
+  workflow_dispatch: # 保留手动触发入口
 
 jobs:
   update-readme-with-blog:
@@ -12,14 +13,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: gautamkrishnar/blog-post-workflow@v1
+        continue-on-error: true   # RSS 未配置时静默跳过，不报错
         with:
           # ────────────────────────────────────────────
           # 激活方式：
-          # 1. 在公众号/知乎后台开启 RSS
-          # 2. 将下方 feed_list 的 URL 替换为你的 RSS 地址
-          # 3. 多个源用逗号分隔
-          # 示例：
-          #   feed_list: "https://your-zhihu-rss.com/feed, https://your-wechat-rss.com/feed"
+          # 1. 在公众号 / 知乎后台开启 RSS
+          # 2. 将下方 feed_list 替换为你的真实 RSS 地址
+          # 3. 多个源用逗号分隔，示例：
+          #    feed_list: "https://zhihu-rss.example.com/feed, https://wechat-rss.example.com/feed"
+          # 4. 同时取消上方 schedule 注释，即可自动每 6 小时更新
           # ────────────────────────────────────────────
           feed_list: "https://example.com/feed.xml"
           max_post_count: 5
